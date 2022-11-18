@@ -1,6 +1,12 @@
 //função que dar o play no audio dos botões
-function tocaSom(idElementoAudio) { // função que executa o elemento de som
-  document.querySelector(idElementoAudio).play();
+function tocaSom(elementoDeAudio) { // função que executa o elemento de som
+  const elemento = document.querySelector(elementoDeAudio);
+
+  if (elemento != null && elemento.localName === "audio") {
+    elemento.play();
+  } else {
+    console.log("Elemento nao encontrado");
+  }
 }
 const listaDeTeclas = document.querySelectorAll(".tecla");
 
