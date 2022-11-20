@@ -1,5 +1,5 @@
 //função que dar o play no audio dos botões
-function tocaSom(elementoDeAudio) { // função que executa o elemento de som
+function tocaSom(elementoDeAudio) {
   const elemento = document.querySelector(elementoDeAudio);
 
   if (elemento != null && elemento.localName === "audio") {
